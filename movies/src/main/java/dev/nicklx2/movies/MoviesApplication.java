@@ -15,9 +15,9 @@ public class MoviesApplication {
 	@Bean
 	CommandLineRunner runner(UserRepo userDao){
 		return args -> {
-			String email = "test456@456.ccc";
+			String email = "test2@uuu.com";
 			//Create a user
-			User user = new User(email, "test1", "test1", 0123456, 1);
+			User user = new User(email, "test2", "test2", 0123457, 1);
 			//check if email is reapeat in DB
 			userDao.findUserByEmail(email)
 					.ifPresentOrElse(users -> {
